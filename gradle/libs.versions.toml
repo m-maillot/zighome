@@ -1,0 +1,42 @@
+[versions]
+agp = "8.2.2"
+kotlin = "1.9.20"
+compose = "1.5.4"
+compose-compiler = "1.5.4"
+compose-material3 = "1.1.2"
+androidx-activityCompose = "1.8.0"
+ktor = "3.0.0-beta-1"
+logback = "1.4.14"
+exposed = "0.41.1"
+h2 = "2.1.214"
+postgres = "42.5.1"
+
+[libraries]
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
+compose-ui = { module = "androidx.compose.ui:ui", version.ref = "compose" }
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "compose" }
+compose-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "compose" }
+compose-material3 = { module = "androidx.compose.material3:material3", version.ref = "compose-material3" }
+
+server-ktor-core-jvm = { module = "io.ktor:ktor-server-core-jvm", version.ref = "ktor" }
+server-ktor-auto-head-response-jvm = { module = "io.ktor:ktor-server-auto-head-response-jvm", version.ref = "ktor" }
+server-ktor-compression-jvm = { module = "io.ktor:ktor-server-compression-jvm", version.ref = "ktor" }
+server-ktor-call-logging-jvm = { module = "io.ktor:ktor-server-call-logging-jvm", version.ref = "ktor" }
+server-ktor-call-id-jvm = { module = "io.ktor:ktor-server-call-id-jvm", version.ref = "ktor" }
+server-ktor-content-negotiation-jvm = { module = "io.ktor:ktor-server-content-negotiation-jvm", version.ref = "ktor" }
+ktor-serialization-kotlinx-json-jvm = { module = "io.ktor:ktor-serialization-kotlinx-json-jvm", version.ref = "ktor" }
+server-ktor-netty = { module = "io.ktor:ktor-server-netty", version.ref = "ktor" }
+server-logback = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+server-database-exposed-core = { module = "org.jetbrains.exposed:exposed-core", version.ref = "exposed" }
+server-database-exposed-jdbc = { module = "org.jetbrains.exposed:exposed-jdbc", version.ref = "exposed" }
+server-database-h2 = { module = "com.h2database:h2", version.ref = "h2" }
+server-database-postgres = { module = "org.postgresql:postgresql", version.ref = "postgres" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+kotlinCocoapods = { id = "org.jetbrains.kotlin.native.cocoapods", version.ref = "kotlin" }
